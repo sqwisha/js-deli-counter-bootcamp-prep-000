@@ -12,16 +12,15 @@ function nowServing(currentLine) {
 }
 
 function currentLine(currentLine) {
-  var lineLength = currentLine.length;
-  var name = currentLine;
-  
   if (currentLine.length === 0) {
     return `The line is currently empty.`;
   }
-  else {
-    var lineList = `The line is currently: `;
     
-    for ( i = 0; i < lineLength)
-    `The line is currently: 1. ${name[0]}, 2. ${name[1]}`;
+  var lineList = `The line is currently: `;
+    
+  for ( let i = 0; i < currentLine.length; i++) {
+    lineList += `${i+1}. ${currentLine[i]} `; 
   }
+  
+  return lineList;
 }
