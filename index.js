@@ -16,7 +16,6 @@ function currentLine(currentLine) {
     return `The line is currently empty.`;
   }
     
-  var lineList = `The line is currently: `;
   var names = [];
     
   for ( let i = 0; i < currentLine.length; i++) {
