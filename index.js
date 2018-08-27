@@ -23,6 +23,6 @@ function currentLine(currentLine) {
     names.push(`${i+1}. ${currentLine[i]}`); 
   }
 
-  var finalOutput = lineList.concat( names.join(`, `) );
+  var finalOutput = `The line is currently: `.concat( names.join(`, `) );
   return finalOutput;
 }
