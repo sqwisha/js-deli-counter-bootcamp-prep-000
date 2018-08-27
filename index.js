@@ -2,7 +2,7 @@ function takeANumber(currentLine, customerName) {
   
   currentLine.push(customerName);
   
-  var position = currentLine.length + 1;
+  var position = currentLine.length;
   
   return `Welcome, ${customerName}. You are number ${position} in line.`;
 }
