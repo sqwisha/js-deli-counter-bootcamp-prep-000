@@ -22,8 +22,7 @@ function currentLine(currentLine) {
   for ( let i = 0; i < currentLine.length; i++) {
     names.push(`${i+1}. ${currentLine[i]}`); 
   }
-  
-  names.join();
-  lineList.concat(names);
-  return lineList;
+
+  var finalOutput = lineList.concat( names.join(`, `) );
+  return finalOutput;
 }
