@@ -17,10 +17,13 @@ function currentLine(currentLine) {
   }
     
   var lineList = `The line is currently: `;
+  var names = [];
     
   for ( let i = 0; i < currentLine.length; i++) {
-    lineList += `${i+1}. ${currentLine[i]} `; 
+    names.push(`${i+1}. ${currentLine[i]}`); 
   }
   
+  names.join();
+  lineList.concat(names);
   return lineList;
 }
